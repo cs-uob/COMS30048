@@ -1,7 +1,11 @@
-index.html : index.m4 $(wildcard ./include/*)
-	@m4 -I ./include ${<} > ${@}
+build   :
+	@jekyll build
 
-all   :             index.html
+serve   :
+	@jekyll serve --watch --livereload
 
-clean :
-	@rm --force index.html
+commit  :
+	@git commit -a
+
+publish :
+	@git push
