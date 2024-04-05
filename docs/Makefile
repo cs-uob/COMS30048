@@ -1,11 +1,8 @@
-build   :
+build :
 	@jekyll build
 
-serve   :
+serve :
 	@jekyll serve --watch --livereload
 
-commit  :
-	@git commit -a
-
-publish :
-	@git push
+clean :
+	@rm --force --recursive ./.jekyll-cache ./_site
