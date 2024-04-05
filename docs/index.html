@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+
+<html xmlns='https://www.w3.org/1999/xhtml' lang='en-gb' xml:lang='en-gb'>
+
+ <head>
+  <link rel='stylesheet' type='text/css' href='index.css'>
+</head>
+
+ <body style='width: 90%; margin: auto; font-family: sans-serif;'>
+
+  <h1><a target='_top' href='https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30048&ayrCode=24/25'>COMS30048: Applied Cryptology</a> 
+      (<a target='_top' href='https://cs-uob.github.io/COMS30048'>non-Blackboard access</a> via <a href='https://github.com/cs-uob/COMS30048/tree/COMS30048_2024'>GitHub</a> repo.)
+ </h1>
+
+  <!-- ===================================================================== -->
+
+ <hr/>
+
+  <h2 id='contents'>Contents</h2>
+  <p>
+  <ul><li><a href='#staff'   >Unit staff</a>
+     </li>
+      <li><a href='#material'>Unit material</a>
+     </li>
+      <li><a href='#vm'      >Unit virtual machine</a>
+     </li>
+ </ul>
+ </p>
+
+ <hr/>
+
+  <!-- ===================================================================== -->
+
+  <h2 id='staff'>Unit staff</h2>
+  <p>
+    <!-- ===================================================================== -->
+
+  <center>
+  <table class='staff'    width='100%'>
+
+  <!-- ..................................................................... -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='50%'><b>Name      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='50%'><b>Role      </b></td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+ 
+   <tr>
+    <td class='lec-1'>Dr. Daniel Page
+   </td>
+    <td class='lec-1'>Lecturer and Unit Director
+   </td>
+  </tr>
+   <tr>
+    <td class='lec-2'>Dr. David Bernhard
+   </td>
+    <td class='lec-2'>Lecturer
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+
+ </table>
+ </center>
+
+  <!-- ===================================================================== -->
+
+ </p>
+
+ <hr/>
+
+  <!-- ===================================================================== -->
+
+  <h2 id='material-TB1'>Unit material</h2>
+  <p>
+    <!-- ===================================================================== -->
+
+  <center>
+  <table class='material' width='100%'>
+
+  <!-- ..................................................................... -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='10%'><b>Week      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='15%'><b>Type      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='15%'><b>Date      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='40%'><b>Content   </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='20%'><b>Assessment</b></td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- shared  -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>13 to 24
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/misc-organise.pdf'>organisation</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/misc-notation.pdf'>notation</a>
+                                                | revision
+                                                  <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/misc-revision_q.pdf'>questions</a> 
+                                                  and
+                                                  <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/misc-revision_s.pdf'>solutions</a>
+                                                ]
+   </td>
+    <td class='gap'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 13 -->
+
+   <tr>
+    <td class='blank' rowspan=' 3' colspan=' 1'>13
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Unit intro.
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-1-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-1-1_n.pdf'>notes</a>
+                                                ]
+                                                &nbsp;
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-1-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-1-2_n.pdf'>notes</a>
+                                                ]
+   </td>
+    <td class='blank' rowspan='54' colspan=' 1'>Summative coursework assignment (<code>AttackHW</code>)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/cw/AttackHW/question.pdf'>description</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-1-1.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>26/01/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-1-2.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+ <!-- ..................................................................... -->
+  <!-- week 14 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>14
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>29/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Implementation <br/> (AES)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/ceng/chap-primitive_aes.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>30/01/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-2.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>02/02/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-2.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li>A.J. Menezes, P.C. van Oorschot, and S.A. Vanstone.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1201/9780429466335'>Handbook of applied cryptography</a>.
+                                                        <br/>
+                                                        5th edition, CRC Press, 
+                                                        2001.
+
+                                                        <ul><li>&sect;  2: mathematical background
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap2.pdf'>content</a>
+                                                                ].
+                                                           </li>
+                                                            <li>&sect;  7: block ciphers
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap7.pdf'>content</a>
+                                                                ].
+                                                           </li>
+                                                       </ul>
+                                                   </li>
+                                                    <li>C. Paar and J. Pelzl.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/978-3-642-04101-3'>Understanding cryptography</a>.
+                                                        <br/>
+                                                        1st edition, Springer, 
+                                                        2010.
+                                                        
+                                                        <ul><li>&sect;  4: finite fields
+                                                                [ <a target='_top' href='https://www.crypto-textbook.com/download/Understanding-Cryptography-Chapter4.pdf'>content</a>
+                                                                | <a target='_top' href='https://www.youtube.com/watch?v=x1v2tX4_dkQ'>video</a>
+                                                                ].
+                                                           </li>
+                                                            <li>&sect;  4: Advanced Encryption Standard (AES) 
+                                                                [ <a target='_top' href='https://www.crypto-textbook.com/download/Understanding-Cryptography-Chapter4.pdf'>content</a>
+                                                                | <a target='_top' href='https://www.youtube.com/watch?v=NHuibtoL_qk'>video</a>
+                                                                ].
+                                                           </li>
+                                                       </ul>
+                                                   </li>
+                                                    <li>J. Daemen and V. Rijmen.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/978-3-662-04722-4'>The design of Rijndael</a>.
+                                                        <br/>
+                                                        1st edition, Springer, 
+                                                        2002
+                                                                [ <a target='_top' href='https://cs.ru.nl/~joan/papers/JDA_VRI_Rijndael_2002.pdf'>content</a>
+                                                                ].
+                                                   </li>
+                                                    <li>National Institute of Standards and Technology (NIST).
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.6028/NIST.FIPS.197-upd1'>Federal Information Processing Standards (FIPS) 197: Advanced Encryption Standard (AES)</a>.
+                                                        <br/>
+                                                        2023.
+                                                   </li>
+                                               </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 15 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>15
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>05/02/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Implementation <br/> (RSA)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-3_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-3_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>06/02/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-3.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>09/02/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-3.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li>A.J. Menezes, P.C. van Oorschot, and S.A. Vanstone.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1201/9780429466335'>Handbook of applied cryptography</a>.
+                                                        <br/>
+                                                        5th edition, CRC Press, 
+                                                        2001.
+
+                                                        <ul><li>&sect;  2: mathematical background
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap2.pdf' >content</a>
+                                                                ].
+                                                           </li>
+                                                            <li>&sect;  8: public-key encryption
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap8.pdf' >content</a>
+                                                                ].
+                                                           </li>
+                                                            <li>&sect; 14: efficient implementation
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap14.pdf'>content</a>
+                                                                ].
+                                                           </li>
+                                                       </ul>
+                                                   </li>
+                                                    <li>C. Paar and J. Pelzl.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/978-3-642-04101-3'>Understanding cryptography</a>.
+                                                        <br/>
+                                                        1st edition, Springer, 
+                                                        2010.
+                                                        
+                                                        <ul><li>&sect;  7: the RSA cryptosystem and efficient exponentiation
+                                                                [ <a target='_top' href='https://www.crypto-textbook.com/download/Understanding-Cryptography-Chapter7.pdf'>content</a>
+                                                                | <a target='_top' href='https://www.youtube.com/watch?v=QSlWzKNbKrU'>video</a>
+                                                                ].
+                                                           </li>
+                                                       </ul>
+                                                   </li>
+                                                    <li>R.L. Rivest, A. Shamir, and L. Adleman.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1145/359340.359342'>A method for obtaining digital signatures and public-key cryptosystems</a>.
+                                                        <br/>
+                                                        In Communications of the ACM (CACM), 21(2), 120--126, 
+                                                        1978.
+                                                   </li>
+                                                    <li>P.L. Montgomery.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1090/s0025-5718-1985-0777282-x'>Modular multiplication without trial division</a>.
+                                                        <br/>
+                                                        In Mathematics of Computation, 44(170), 519--521, 
+                                                        1985.
+                                                   </li>
+                                                    <li>D.M. Gordon.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1006/jagm.1997.0913'>A survey of fast exponentiation methods</a>.
+                                                        <br/>
+                                                        In Journal of Algorithms, 27(1), 129--146, 
+                                                        1998.
+                                                   </li>
+                                               </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 16 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>16
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>12/02/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Implementation attacks <br/> (concepts)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-4_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-4_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/ceng/chap-attack_imp_concept.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>13/02/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-4.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>16/02/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-4.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li>S. Mangard, E. Oswald, and T. Popp.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/978-0-387-38162-6'>Power analysis attacks: revealing the secrets of smart cards</a>.
+                                                        <br/>
+                                                        1st edition, Springer,
+                                                        2010.
+                                                   </li>
+                                                    <li>M. Joye and M. Tunstall.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/978-3-642-29656-7'>Fault analysis in cryptography</a>.
+                                                        <br/>
+                                                        1st edition, Springer,
+                                                        2014.
+                                                   </li>
+                                               </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 17 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>17
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>19/02/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Implementation attacks <br/> (examples)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-5_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-5_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/ceng/chap-attack_imp_example.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>20/02/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-5.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/02/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/sheet/lab-5.pdf'>worksheet</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li>P.C. Kocher.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/3-540-68697-5_9'>Timing attacks on implementations of Diffie-Hellman, RSA, DSS, and other systems</a>.
+                                                        <br/>
+                                                        In Advances in Cryptology (CRYPTO),
+                                                        Springer-Verlag, LNCS 1109, 104--113, 
+                                                        1996.
+                                                   </li>
+                                                    <li>P.C. Kocher, J. Jaffe, and B. Jun.                                                        
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/3-540-48405-1_25'>Differential power analysis</a>.
+                                                        <br/>
+                                                        In Advances in Cryptology (CRYPTO),
+                                                        Springer-Verlag, LNCS 1666, 388--397, 
+                                                        1999.
+                                                   </li>
+                                               </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 18 -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>18
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 3'><b>Reading  week</b>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 19 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>19
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>04/03/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Implementation <br/> (ECC)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-6_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-6_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>05/03/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>08/03/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li>A.J. Menezes, P.C. van Oorschot, and S.A. Vanstone.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1201/9780429466335'>Handbook of applied cryptography</a>.
+                                                        <br/>
+                                                        5th edition, CRC Press, 
+                                                        2001.
+
+                                                        <ul><li>&sect;  2: mathematical background
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap2.pdf'>content</a>
+                                                                ].
+                                                           </li>
+                                                       </ul>
+                                                   </li>
+                                                    <li>C. Paar and J. Pelzl.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/978-3-642-04101-3'>Understanding cryptography</a>.
+                                                        <br/>
+                                                        1st edition, Springer, 
+                                                        2010.
+                                                        
+                                                        <ul><li>&sect;  9: elliptic curves
+                                                                [ <a target='_top' href='https://www.crypto-textbook.com/download/Understanding-Cryptography-Chapter9.pdf'>content</a>
+                                                                | <a target='_top' href='https://www.youtube.com/watch?v=vnpZXJL6QCQ'>video</a>
+                                                                ].
+                                                           </li>
+                                                            <li>&sect;  9: Elliptic Curve Cryptography (ECC)
+                                                                [ <a target='_top' href='https://www.crypto-textbook.com/download/Understanding-Cryptography-Chapter9.pdf'>content</a>
+                                                                | <a target='_top' href='https://www.youtube.com/watch?v=zTt4gvuQ6sY'>video</a>
+                                                                ].
+                                                           </li>
+                                                       </ul>
+                                                    <li>V.S. Miller.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1007/3-540-39799-X_31'>Use of elliptic curves in cryptography</a>.
+                                                        <br/>
+                                                        In Advances in Cryptology (CRYPTO),
+                                                        Springer-Verlag, LNCS 218, 417--426, 
+                                                        1985.   
+                                                    <li>N. Koblitz.
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1090/S0025-5718-1987-0866109-5'>Elliptic curve cryptosystems</a>.
+                                                        <br/>
+                                                        In Mathematics of Computation, 48(117), 203--209 
+                                                        1987.
+                                                   </li>
+                                               </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 20 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>20
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>11/03/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Implementation <br/> (RNG)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-7_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-7_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>12/03/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>15/03/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li>A.J. Menezes, P.C. van Oorschot, and S.A. Vanstone. 
+                                                        <br/>
+                                                        <a target='_top' href='https://doi.org/10.1201/9780429466335'>Handbook of applied cryptography</a>.
+                                                        <br/>
+                                                        5th edition, CRC Press, 
+                                                        2001.
+
+                                                        <ul><li>&sect;  2: mathematical background
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap2.pdf'>content</a>
+                                                                ].
+                                                           </li>
+                                                            <li>&sect;  5: pseudo-random bits and sequences
+                                                                [ <a target='_top' href='https://cacr.uwaterloo.ca/hac/about/chap5.pdf'>content</a>
+                                                                ].
+                                                           </li>
+                                                       </ul>
+                                                   </li>
+                                               </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 21 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>21
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/> (asynchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>18/03/24 <br/> QB-1.68
+   </td>
+    <td class='lec-2' rowspan=' 1' colspan=' 1'>
+        TLS <br />
+        [<a target="_top" href="https://assets.phoo.org/COMS30048_2023_TB-2/csxdb/slide/AC-TLS.pdf">slides</a>]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>19/03/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/03/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+  <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+        <ul>
+            <li><a href="https://datatracker.ietf.org/doc/html/rfc8446">RFC 8446: <b>The Transport Layer Security (TLS) Protocol Version 1.3</b></a>
+            </li>
+        </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 22 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>22
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/> (asynchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>15/04/24 <br/> QB-1.68
+   </td>
+    <td class='lec-2' rowspan=' 1' colspan=' 1'>
+        From Schnorr to Curve25519:<br/> implementation aspects of singature protocols and related ECC primitives<br />
+        (slides: work in progress)
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>16/04/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>19/04/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+  <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+        <ul>
+            <li>Dan Bernstein: <a href="https://blog.cr.yp.to/20140323-ecdsa.html">How to design an elliptic-curve signature system</a></li>
+            <li>Dan Bernstein: <a href="https://cr.yp.to/ecdh.html#curve25519-paper">A state-of-the-art Diffie-Hellman function</a> (on Curve25519)</li>
+            <li>Bernhard, Pereira, Warinschi: <a href="https://eprint.iacr.org/2016/771">How not to Prove Yourself: Pitfalls of the Fiat-Shamir Heuristic and Applications to Helios</a></li>
+        </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 23 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>23
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/> (asynchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/04/24 <br/> QB-1.68
+   </td>
+    <td class='lec-2' rowspan=' 1' colspan=' 1'>
+        Authentication on the web: JWT, U2F/webauthn and friends<br/>
+        (slides: work in progress)
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/04/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>26/04/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+        
+   </td>
+  </tr>
+  <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+        <ul>
+            <li>
+                <a href="https://datatracker.ietf.org/doc/html/rfc7515">RFC 7515: JSON Web Signature</a>
+            </li>
+            <li>
+                <a href="https://datatracker.ietf.org/doc/html/rfc8725">RFC 8725: JSON Web Token Best Current Practices</a>
+            </li>
+        </ul>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 24 -->
+
+   <tr>
+    <td class='blank' rowspan=' 3' colspan=' 1'>24
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/> (asynchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>29/04/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Unit outro.
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-9_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/slide/lec-9_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>30/04/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>03/05/24 <br/> MVB-1.15
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+
+ </table>
+ </center>
+
+  <!-- ===================================================================== -->
+
+ </p>
+
+  <!-- ===================================================================== -->
+
+  <h2 id='vm'>Unit virtual machine</h2>
+  <p>
+  IT provision for the unit is based on the assumption you work in the lab. 
+  using UoB-managed and thus 
+  <i>  supported</i> equipment.  
+  If you need or prefer to use your own equipment, however, 
+  <i>unsupported</i> alternatives include the use of a bespoke
+  <a href='https://en.wikipedia.org/wiki/Virtual_machine'>Virtual Machine (VM)</a>
+  which aims to replicate a lab. workstation as closely as possible:
+ </p>
+  <p>
+  <!--- -------------------------------------------------------------------- --->
+<ul>
+<li><p>Read over some sort of <a href="https://www.google.com/search?q=vagrant+tutorial">tutorial</a> material if need be.</p></li>
+<li><p>Install various pre-requisites, i.e.,</p>
+<ul>
+<li><p><a href="https://www.virtualbox.org">VirtualBox</a> including any extension packs necessary, e.g., for USB device support, and</p></li>
+<li><p><a href="https://www.vagrantup.com">Vagrant</a>, plus associated plug-ins, as need be, e.g., by executing</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-vbguest</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-disksize</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-reload</span></code></pre></div></li>
+</ul>
+<p>Note that:</p>
+<ul>
+<li><p>using a recent version of VirtualBox is <em>strongly</em> recommended: currently this is 6.x, whereas you may get 5.x when using some package managers,</p></li>
+<li><p>when using a Windows-based host, you may <em>also</em> need to install an X server (e.g., <a href="https://freedesktop.org/wiki/Xming">Xming</a>) in order to support forwarded X11 client interfaces, and</p></li>
+<li><p>some features of the VM (e.g., access to USB devices) <em>may</em> demand you are a member of the <a href="https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers"><code>vboxusers</code></a>; group; you can ensure this by executing</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="fu">sudo</span> usermod --append --groups vboxusers <span class="va">${USER}</span></span></code></pre></div></li>
+</ul></li>
+<li><p>Launch the VM using <em>either</em> of the following approaches:</p>
+<ol type="1">
+<li><p>Self-provisioned:</p>
+<ul>
+<li><p>execute</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="fu">mkdir</span> ./COMS30048</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="bu">cd</span> ./COMS30048</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="fu">wget</span> https://assets.phoo.org/COMS30048_2023_TB-2/csdsp/vm/vm.tar.gz</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="fu">tar</span> --gzip --extract --file=<span class="st">&#39;vm.tar.gz&#39;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="bu">cd</span> ./vm</span></code></pre></div>
+<p>to download a <code>Vagrantfile</code> that references an <a href="https://app.vagrantup.com/boxomatic/boxes/rocky-8">un-provisioned</a> base box,</p></li>
+<li><p><a href="https://www.vagrantup.com/docs/vagrantfile">edit</a> the resulting <code>Vagrantfile</code> to suit any specific requirements,</p></li>
+<li><p>execute</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">vagrant</span> up</span></code></pre></div>
+<p>after which the VM boots, and the provisioning step executes: this may take some time.</p></li>
+</ul></li>
+<li><p>Pre-provisioned:</p>
+<ul>
+<li><p>execute</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="fu">mkdir</span> ./COMS30048</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a><span class="bu">cd</span> ./COMS30048</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a><span class="fu">mkdir</span> ./vm</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a><span class="bu">cd</span> ./vm</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a><span class="ex">vagrant</span> init danpage/COMS30048</span></code></pre></div>
+<p>to generate a <code>Vagrantfile</code> that references a <a href="https://app.vagrantup.com/danpage/boxes/COMS30048">pre-provisioned</a> base box,</p></li>
+<li><p><a href="https://www.vagrantup.com/docs/vagrantfile">edit</a> the resulting <code>Vagrantfile</code> to suit any specific requirements,</p></li>
+<li><p>execute</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a><span class="ex">vagrant</span> up</span></code></pre></div>
+<p>after which the VM boots: this may take some time.</p></li>
+</ul></li>
+</ol></li>
+<li><p>Access the VM:</p>
+<ul>
+<li><p>check the SSH configuration matches what you expect by executing</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="ex">vagrant</span> ssh-config</span></code></pre></div></li>
+<li><p>automatically use SSH to access the VM, e.g., by executing</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a><span class="ex">vagrant</span> ssh</span></code></pre></div></li>
+<li><p>manually use SSH to access the VM, e.g., by executing</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true"></a><span class="fu">ssh</span> vagrant@localhost -p 2222 -i .vagrant/machines/default/virtualbox/private_key -X</span></code></pre></div>
+<p>where <code>-p</code> specifies a port (on <code>localhost</code>) matching the SSH configuration, <code>-i</code> specifies an identity whereby the private key for <code>vagrant</code> is used, and <code>-X</code> enables X11 forwarding, i.e., display of GUI applications on the host desktop.</p></li>
+</ul>
+<p>Note that <code>/home/vagrant/share</code> represents a <a href="https://www.virtualbox.org/manual/ch04.html#sharedfolders">shared folder</a> accessible from both the host and guest VM. We recommend using this for transfer of data <b>only</b>, however, rather than as a “live”, working file system: it seems the VirtualBox implementation of this feature is imperfect, meaning that the latter can result in somewhat cryptic errors which are difficult to resolve.</p></li>
+</ul>
+<!--- -------------------------------------------------------------------- --->
+
+ </p>
+
+ <hr/>
+
+  <!-- ===================================================================== -->
+
+</body>
+
+</html>
