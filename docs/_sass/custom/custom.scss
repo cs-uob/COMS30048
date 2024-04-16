@@ -1,48 +1,33 @@
-/* ========================================================================= */
+/* ========================================================================== */
 
-.header  {
-  padding-top : 0px;
-  margin-bottom : 10px;
+.site-nav, .site-header, .site-footer {
+  width: 100%;
 }
 
-.footer  {
-  padding-top : 10px;
-  margin-bottom : 0px;
+.side-bar {
+  @include mq(lg) {
+    width: $nav-width;
+  }
 }
 
-.content {
-  width : 100%;
-  margin-top : 10px;
-  margin-bottom : 10px;
-  margin-left : auto;
-  margin-right : auto;
+.main {
+  @include mq(lg) {
+    max-width: 75%;
+    margin-left: calc($nav-width + 5%);
+  }
 }
 
-/* ------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 p     { text-align: justify; text-justify: inter-word; }
 li    { text-align: justify; text-justify: inter-word; }
 
-/* ------------------------------------------------------------------------- */
-
 table { border-collapse: collapse; empty-cells: show; }
 
-table.staff      tr     {
-  height : 3em;
-}
-table.staff      tr.gap {
-  height : 1em;
-}
 table.material   tr     {
   height : 3em;
 }
 table.material   tr.gap {
-  height : 1em;
-}
-table.assessment tr     {
-  height : 3em;
-}
-table.assessment tr.gap {
   height : 1em;
 }
 
@@ -68,16 +53,4 @@ td.assessment {
   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffffcc; 
 }
 
-/* ------------------------------------------------------------------------- */
-
-.extra       { 
-  border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #f1f1f1; opacity: 0.25; transition: opacity .25s ease-in-out;
-           transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-     -moz-transition: opacity .25s ease-in-out;
-}
-.extra:hover {
-  opacity: 1.00;
-}
-
-/* ========================================================================= */
+/* ========================================================================== */

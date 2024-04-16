@@ -20,6 +20,7 @@ sudo dnf --assumeyes install gcc-c++
 sudo dnf --assumeyes install git
 sudo dnf --assumeyes install git-lfs
 sudo dnf --assumeyes install glibc-static
+sudo dnf --assumeyes install gperf
 sudo dnf --assumeyes install kernel-headers 
 sudo dnf --assumeyes install kernel-devel
 sudo dnf --assumeyes install libstdc++-static
