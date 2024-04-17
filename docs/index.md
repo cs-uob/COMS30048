@@ -20,8 +20,7 @@ a unit operated by the
 Quoting the catalogue entry, the remit of this unit can be summarised as follows:
 
 {: .highlight }
- <i>
- <div markdown='block'>
+ <div markdown='block' style='font-style: italic'>
 [t]his unit delivers an introduction to two sub-fields of cryptography, namely applied cryptography and cryptographic engineering. As such, the unit content can be summarised as spanning three core topics:
 
 1. efficient implementation techniques for standard symmetric and asymmetric cryptographic primitives,
@@ -30,7 +29,6 @@ Quoting the catalogue entry, the remit of this unit can be summarised as follows
 
 The aim is to equip students with understanding and skills that enable use (i.e., design, implementation, deployment, and analysis) of cryptographic technologies when addressing real-world (e.g., industrially relevant) problems. By offering an applied, practical perspective on the field of cryptography, it complements, and therefore represents an ideal companion for, other units offering a more theoretical perspective.
 </div>
-</i>
 
 Note that
 
