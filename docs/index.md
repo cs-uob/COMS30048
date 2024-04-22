@@ -51,7 +51,7 @@ Note that
 
 # Contact Us
 
-- Daniel Page (Lecturer and Unit director): [`daniel.page@bristol.ac.uk`](mailto:daniel.page@bristol.ac.uk?subject=COMS30048)
+- Daniel Page (Lecturer and Unit Director): [`daniel.page@bristol.ac.uk`](mailto:daniel.page@bristol.ac.uk?subject=COMS30048)
 - David Bernhard (Lecturer): [`david.bernhard@bristol.ac.uk`](mailto:david.bernhard@bristol.ac.uksubject=COMS30048)
 
 
