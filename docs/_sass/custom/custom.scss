@@ -16,6 +16,13 @@
   }
 }
 
+.main-content-wrap  {
+  @include mq(lg) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 
 p     { text-align: justify; text-justify: inter-word; }
