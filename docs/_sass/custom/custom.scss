@@ -13,7 +13,7 @@
 .main {
   @include mq(lg) {
     max-width: 100%;
-    margin-left: $nav-width;
+    margin-left: 0%;
   }
 }
 
