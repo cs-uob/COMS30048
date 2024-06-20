@@ -5,18 +5,23 @@
 }
 
 .side-bar {
+  @include mq(lg) {
     width: $nav-width;
+  }
 }
 
 .main {
-    max-width: 0%;
+  @include mq(lg) {
     max-width: 100%;
-    margin-left: 0%;
+    margin-left: $nav-width;
+  }
 }
 
 .main-content-wrap  {
+  @include mq(lg) {
     margin-left: 10%;
     margin-right: 10%;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
