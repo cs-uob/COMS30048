@@ -27,23 +27,23 @@ Vagrant.configure( "2" ) do |config|
   # configure USB interfaces and device filters
   config.vm.provider "virtualbox" do |vb|
     # enable USB interfaces
-    vb.customize [ "modifyvm", :id, "--usb",     "on" ] # USB 1.x
-    vb.customize [ "modifyvm", :id, "--usbehci", "on" ] # USB 2.x
-    vb.customize [ "modifyvm", :id, "--usbxhci", "on" ] # USB 3.x
+    #vb.customize [ "modifyvm", :id, "--usb",     "on" ] # USB 1.x
+    #vb.customize [ "modifyvm", :id, "--usbehci", "on" ] # USB 2.x
+     vb.customize [ "modifyvm", :id, "--usbxhci", "on" ] # USB 3.x
     # filter USB devices (i.e., allow pass-through from host to virtual machine)
-    vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-board", "--vendorid", "0x0403", "--productid", "0x6001" ] # SCALE board (i.e., FTDI-based UART)
-    vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-scope", "--vendorid", "0x0ce9", "--productid", "0x1016" ] # SCALE scope (i.e., PicoScope 2206B)
+     vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-board", "--vendorid", "0x0403", "--productid", "0x6001" ] # SCALE board (i.e., FTDI-based UART)
+     vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-scope", "--vendorid", "0x0ce9", "--productid", "0x1016" ] # SCALE scope (i.e., PicoScope 2206B)
   end
 
   # provisioning step: general-purpose prologue
   config.vm.provision "prologue", type: "shell", preserve_order: true, run: "once", path: "provision_prologue.sh",
-                                  env: { "UNIT_CODE" => "COMS30048", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS30048_2023_TB-2" }
+                                  env: { "UNIT_CODE" => "COMS30048", "UNIT_YEAR" => "2024", "UNIT_PATH" => "COMS30048_2024_TB-2" }
   # provisioning step: special-purpose wrt. unit
   config.vm.provision "unit",     type: "shell", preserve_order: true, run: "once", path: "provision_unit.sh",
-                                  env: { "UNIT_CODE" => "COMS30048", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS30048_2023_TB-2" }
+                                  env: { "UNIT_CODE" => "COMS30048", "UNIT_YEAR" => "2024", "UNIT_PATH" => "COMS30048_2024_TB-2" }
   # provisioning step: general-purpose epilogue
   config.vm.provision "epilogue", type: "shell", preserve_order: true, run: "once", path: "provision_epilogue.sh",
-                                  env: { "UNIT_CODE" => "COMS30048", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS30048_2023_TB-2" }
+                                  env: { "UNIT_CODE" => "COMS30048", "UNIT_YEAR" => "2024", "UNIT_PATH" => "COMS30048_2024_TB-2" }
 
   # reload virtual machine (to resolve USB detection problem)
   config.vm.provision :reload
