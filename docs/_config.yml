@@ -1,19 +1,28 @@
-url : "https://cs-uob.github.io"
-baseurl : "/COMS30048"
-remote_theme : "just-the-docs/just-the-docs"
+repository: "cs-uob/COMS30048"
+url: "https://cs-uob.github.io"
+baseurl: "/COMS30048"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+include: [ "_pages" ]
 
-title : "COMS30048"
-description : ""
+title: "COMS30048"
+subtitle: "Applied Cryptology"
+title_separator: "|"
 
-aux_links :
-  "COMS30048 via Blackboard" : "https://www.ole.bris.ac.uk"
+minimal_mistakes_skin: "contrast"
+locale: "en"
+enable_copy_code_button: true
+breadcrumbs: false
+atom_feed:
+  hide: true
 
-color_scheme : light
-
-search_enabled : true
-heading_anchors : false
-
-back_to_top : true
-back_to_top_text : "Back to top"
-
-permalink : pretty
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      header:
+        image: /assets/image/banner.png
+      sidebar:
+        nav: "side"

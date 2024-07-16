@@ -1,12 +1,6 @@
 ---
-layout: default
-nav_order: 1
-title: Home
+permalink: /
 ---
-
-{::nomarkdown} 
-{% include banner.html %}
-{:/nomarkdown} 
 
 # Welcome!
 
@@ -19,7 +13,7 @@ a unit operated by the
 [University of Bristol (UoB)](https://www.bristol.ac.uk).
 Quoting the catalogue entry, the remit of this unit can be summarised as follows:
 
-{: .highlight }
+{: .notice--info}
  <div markdown='block' style='font-style: italic'>
 [t]his unit delivers an introduction to two sub-fields of cryptography, namely applied cryptography and cryptographic engineering. As such, the unit content can be summarised as spanning three core topics:
 

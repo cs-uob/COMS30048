@@ -1,0 +1,16 @@
+side:
+  - title: "Internal"
+    children:
+      - title: "Home"
+        url: /
+      - title: "Material"
+        url: /material
+      - title: "Virtual Machine (VM)"
+        url: /vm
+
+  - title: "External"
+    children:
+      - title: "COMS30048 via Blackboard"
+        url: https://www.ole.bris.ac.uk
+      - title: "COMS30048 via GitHub"
+        url: https://cs-uob.github.io/COMS30048
