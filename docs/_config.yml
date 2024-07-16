@@ -2,7 +2,6 @@ repository: "cs-uob/COMS30048"
 url: "https://cs-uob.github.io"
 baseurl: "/COMS30048"
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-include: [ "_pages" ]
 
 title: "COMS30048"
 subtitle: "Applied Cryptology"
@@ -12,8 +11,20 @@ minimal_mistakes_skin: "contrast"
 locale: "en"
 enable_copy_code_button: true
 breadcrumbs: false
+search: true
 atom_feed:
   hide: true
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
 defaults:
   - scope:
