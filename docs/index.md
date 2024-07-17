@@ -27,10 +27,10 @@ The aim is to equip students with understanding and skills that enable use (i.e.
 Note that
 
 - The somewhat complex curriculum structure means this unit is divided into
-  the *teaching*   unit
+  the            *teaching*   unit
   [COMS30048](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30048),
   plus
-  the *assessment* units
+  the associated *assessment* units
   [COMS30049](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30049)
   and
   [COMSM0054](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMSM0054):
