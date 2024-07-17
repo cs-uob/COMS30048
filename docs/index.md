@@ -26,16 +26,17 @@ The aim is to equip students with understanding and skills that enable use (i.e.
 
 Note that
 
-- The somewhat complex curriculum structure means this unit is divided into
-  the            *teaching*   unit
+- Our somewhat complex curriculum structure means this unit is divided into
+  a          *teaching*   unit
   [COMS30048](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30048),
   plus
-  the associated *assessment* units
+  associated *assessment* units
   [COMS30049](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30049)
   and
   [COMSM0054](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMSM0054):
-  although COMS30048 is usually a valid catch-all, in certain cases you may
-  need to take care re. use of the correct unit code.
+  although 
+  COMS30048
+  is usually a valid catch-all, in certain contexts care is needed re. use of the correct unit code.
 - An associated 
   [GitHub](https://github.com/)-based [repo.](https://github.com/cs-uob/COMS30048)
   houses the source code for this web-page, plus various other
@@ -46,8 +47,7 @@ Note that
    *static* content 
   as possible, selected but important
   *dynamic* content 
-  is still only 
-  accessible "inside" UoB and so via the associated
+  is only accessible via the associated
   [Blackboard web-page](https://www.ole.bris.ac.uk):
   important examples include
   any unit announcements,
