@@ -34,8 +34,8 @@ Note that
   [COMS30049](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30049)
   and
   [COMSM0054](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMSM0054):
-  although COMS30048 is usually a valid catch-all, in certain you will need
-  to take care re. use of the correct unit code.
+  although COMS30048 is usually a valid catch-all, in certain cases you may
+  need to take care re. use of the correct unit code.
 - An associated 
   [GitHub](https://github.com/)-based [repo.](https://github.com/cs-uob/COMS30048)
   houses the source code for this web-page, plus various other
