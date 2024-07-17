@@ -26,6 +26,16 @@ The aim is to equip students with understanding and skills that enable use (i.e.
 
 Note that
 
+- The somewhat complex curriculum structure means this unit is divided into
+  the *teaching*   unit
+  [COMS30048](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30048),
+  plus
+  the *assessment* units
+  [COMS30049](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30049)
+  and
+  [COMSM0054](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMSM0054):
+  although COMS30048 is usually a valid catch-all, in certain you will need
+  to take care re. use of the correct unit code.
 - An associated 
   [GitHub](https://github.com/)-based [repo.](https://github.com/cs-uob/COMS30048)
   houses the source code for this web-page, plus various other
