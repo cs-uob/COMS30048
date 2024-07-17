@@ -1,4 +1,3 @@
-repository: "cs-uob/COMS30048"
 url: "https://cs-uob.github.io"
 baseurl: "/COMS30048"
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
@@ -7,6 +6,7 @@ title: "COMS30048"
 subtitle: "Applied Cryptology"
 title_separator: "|"
 
+repository: "cs-uob/COMS30048"
 copyright: "COMS30048"
 copyright_url: "https://cs-uob.github.io/COMS30048"
 minimal_mistakes_skin: "contrast"

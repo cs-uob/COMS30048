@@ -1,5 +1,4 @@
-repository: "cs-uob/COMS30048"
 url: ""
 baseurl: ""
 theme: "minimal-mistakes-jekyll"
-include: [ "_pages" ]
+
