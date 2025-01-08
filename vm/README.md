@@ -23,11 +23,11 @@
   - using a recent version of VirtualBox is *strongly* recommended:
     currently this is 6.x, whereas you may get 5.x when using some
     package managers,
-  - when using a Windows-based host, you may *also* need to install
-    an X server 
-    (e.g., [Xming](https://freedesktop.org/wiki/Xming))
-    in order to support forwarded X11 client interfaces,
+  - you *may* also need to install an X server in order to support 
+    forwarded X11 client interfaces: examples include
+    [Xming](https://sourceforge.net/projects/xming) or [Cygwin/X](http://x.cygwin.com) for Windows,
     and
+    [XQuartz](https://www.xquartz.org) for MacOS,
   - some features of the VM
     (e.g., access to USB devices)
     *may* demand you are a member of the

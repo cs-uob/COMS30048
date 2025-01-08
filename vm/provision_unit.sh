@@ -40,9 +40,9 @@ sudo yum --assumeyes localinstall https://labs.picotech.com/rpm/x86_64/libps6000
 sudo yum --assumeyes localinstall https://labs.picotech.com/rpm/noarch/picoscope-6.13.7-4r707.noarch.rpm
 
 # software install: ARM-based GCC tool-chain
-wget --quiet --output-document="arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz" https://developer.arm.com/-/media/Files/downloads/gnu/12.3.rel1/binrel/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz
-sudo tar --extract --transform "s|arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi|arm-gnu-toolchain/12.3.rel1|" --directory /opt --file ./arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz
-rm --force ./arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz
+wget --quiet --output-document="arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz" https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
+sudo tar --extract --transform "s|arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi|arm-gnu-toolchain/13.2.rel1|" --directory /opt --file ./arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
+rm --force ./arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
 
 # software install: lpc21isp programming tool
 wget --quiet --output-document="lpc21isp_197.tar.gz" https://sourceforge.net/projects/lpc21isp/files/lpc21isp/1.97/lpc21isp_197.tar.gz
