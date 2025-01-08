@@ -31,7 +31,7 @@
   - some features of the VM
     (e.g., access to USB devices)
     *may* demand you are a member of the
-    [`vboxusers`](https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers);
+    [`vboxusers`](https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers)
     group; you can ensure this by executing
 
     ```sh
