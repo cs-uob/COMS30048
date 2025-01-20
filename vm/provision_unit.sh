@@ -41,7 +41,7 @@ sudo yum --assumeyes localinstall https://labs.picotech.com/rpm/noarch/picoscope
 
 # software install: ARM-based GCC tool-chain
 wget --quiet --output-document="arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz" https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
-sudo tar --extract --transform "s|arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi|arm-gnu-toolchain/13.2.rel1|" --directory /opt --file ./arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
+sudo tar --extract --transform "s|arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi|arm-gnu-toolchain/13.2.rel1|" --directory /opt --file ./arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
 rm --force ./arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
 
 # software install: lpc21isp programming tool
