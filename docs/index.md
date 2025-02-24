@@ -59,5 +59,6 @@ Note that
 
 - Daniel Page (Lecturer and Unit Director): [`daniel.page@bristol.ac.uk`](mailto:daniel.page@bristol.ac.uk?subject=COMS30048)
 - François Dupressoir (Lecturer): [`f.dupressoir@bristol.ac.uk`](mailto:f.dupressoir@bristol.ac.uksubject=COMS30048)
+- Ross Bowden (Lecturer): [`ross.bowden@bristol.ac.uk`](mailto:ross.bowden@bristol.ac.uksubject=COMS30048)
 
 
