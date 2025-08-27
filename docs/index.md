@@ -36,29 +36,29 @@ Note that
   [COMSM0054](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMSM0054):
   although 
   COMS30048
-  is usually a valid catch-all, in certain contexts care is needed re. use of the correct unit code.
+  is usually a valid catch-all, some care is required in certain contexts re. use of the correct unit code.
 - An associated 
   [GitHub](https://github.com/)-based [repo.](https://github.com/cs-uob/COMS30048)
-  houses the source code for this web-page, plus various other
+  houses the source code for this web-site, plus various other
   resources which might be useful.
-- Although the goal is to provide
-  "[Blackboard](https://www.blackboard.com)-free"
-  access to as much 
-   *static* content 
-  as possible, selected internal-facing
-  *dynamic* content 
-  is only accessible via the associated
-  [Blackboard web-page](https://www.ole.bris.ac.uk):
-  important examples include
-  any unit announcements,
-  the unit forum,
-  and
-  any submission points, marks, and feedback related to assessment.
+- Although this
+  external-facing
+  web-site hosts as much
+   *static* content
+  as possible, the unit cannot and so is not entirely
+  "[Blackboard](https://www.blackboard.com)-free".
+  Selected
+  internal-facing,
+  *dynamic* content
+  is only accessible via other means: important examples include
+
+  1. unit-wide communication, e.g., announcements (Blackboard),
+  2. assessment submission, marks, and feedback   (Blackboard),
+  3. discussion forum                             (Teams).
 
 # Contact Us
 
 - Daniel Page (Lecturer and Unit Director): [`daniel.page@bristol.ac.uk`](mailto:daniel.page@bristol.ac.uk?subject=COMS30048)
 - François Dupressoir (Lecturer): [`f.dupressoir@bristol.ac.uk`](mailto:f.dupressoir@bristol.ac.uksubject=COMS30048)
-- Ross Bowden (Lecturer): [`ross.bowden@bristol.ac.uk`](mailto:ross.bowden@bristol.ac.uksubject=COMS30048)
-
+- Chloe Martindale (Lecturer): [`chloe.martindale@bristol.ac.uk`](mailto:chloe.martindale@bristol.ac.uksubject=COMS30048)
 
