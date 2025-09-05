@@ -6,7 +6,7 @@
 # which can be found via http://creativecommons.org (and should be included as 
 # LICENSE.txt within the associated archive or repository).
 
-# software install: packaged software
+# software install: packaged software => dnf
 sudo dnf --assumeyes install gnuplot
 sudo dnf --assumeyes install gmp
 sudo dnf --assumeyes install gmp-devel
@@ -16,12 +16,8 @@ sudo dnf --assumeyes install openssl-devel
 sudo dnf --assumeyes install putty
 sudo dnf --assumeyes install usbutils
 
-# software install: mambaforge + sage (mamba activate sage)
-wget --quiet --output-document="Mambaforge-23.1.0-4-Linux-x86_64.sh" https://github.com/conda-forge/miniforge/releases/download/23.1.0-4/Mambaforge-23.1.0-4-Linux-x86_64.sh
-bash ./Mambaforge-23.1.0-4-Linux-x86_64.sh -b -p ./mambaforge
-./mambaforge/bin/mamba init
-./mambaforge/bin/mamba create --quiet --yes --name sage sage
-rm --force ./Mambaforge-23.1.0-4-Linux-x86_64.sh
+# software install: packaged software => conda
+conda install --quiet --yes conda-forge/label/cf202003::sage
 
 # software install: PicoScope application, Software Development Kit (SDK), etc.
 sudo yum --assumeyes localinstall https://labs.picotech.com/rpm/x86_64/picomono-4.6.2.16-1r02.x86_64.rpm
@@ -62,7 +58,7 @@ sudo make install
 cd ..
 rm --force --recursive ./libserialport-0.1.1
 
-# system configuration: udev rules
+# system configuration: SCALE udev rules
 sudo tee -a /etc/udev/rules.d/99-scale.rules > /dev/null <<'EOF'
 # SCALE board (i.e., FTDI-based UART)
 ACTION!="remove", SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", GROUP:="wheel", MODE:="0666", SYMLINK+="scale-board"
@@ -70,3 +66,43 @@ ACTION!="remove", SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="
 ACTION!="remove", SUBSYSTEM=="usb", ATTRS{idVendor}=="0ce9", ATTRS{idProduct}=="1016", GROUP:="wheel", MODE:="0666", SYMLINK+="scale-scope"
 EOF
 sudo udevadm control --reload-rules && sudo udevadm trigger
+
+# software install: SCALE repo.
+python3 --version
+
+git clone --branch ${UNIT_CODE}_${UNIT_YEAR} http://www.github.com/danpage/scale-hw.git ./scale-hw
+
+export PATH="${PATH}:/opt/arm-gnu-toolchain/13.2.rel1/bin"
+export PATH="${PATH}:/opt/lpc21isp/1.97"
+export PATH="${PATH}:/opt/picoscope/bin"
+
+export REPO="/home/vagrant/scale-hw"
+export TARGET="lpc1313fbd48"
+
+echo "setuptools" >> ./scale-hw/requirements.txt # temporary "hack" of deps. due to removal of distutils from recent
+
+cd ./scale-hw
+source ${REPO}/bin/conf.sh
+make venv
+source ${REPO}/build/venv/bin/activate 
+make --directory="./src/scale/target/${TARGET}" build
+cd ..
+
+# software install: SCALE repo. configuration script
+tee -a ./scale-hw.sh > /dev/null <<'EOF'
+#!/bin/bash
+
+export PATH="${PATH}:/opt/arm-gnu-toolchain/13.2.rel1/bin"
+export PATH="${PATH}:/opt/lpc21isp/1.97"
+export PATH="${PATH}:/opt/picoscope/bin"
+
+export REPO="/home/vagrant/scale-hw"
+export TARGET="lpc1313fbd48"
+
+source ${REPO}/bin/conf.sh
+source ${REPO}/build/venv/bin/activate
+EOF
+chmod 775 ./scale-hw.sh
+
+chown -R vagrant:vagrant ./scale-hw
+chown    vagrant:vagrant ./scale-hw.sh
